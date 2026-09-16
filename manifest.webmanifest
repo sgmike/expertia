@@ -1,0 +1,14 @@
+{
+  "name": "Expertia · IA y Claude",
+  "short_name": "Expertia",
+  "description": "Curso para entender la inteligencia artificial de cero a experto y manual maestro de Claude.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5f1",
+  "theme_color": "#4338ca",
+  "lang": "es",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

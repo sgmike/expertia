@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto" data-font="md">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Expertia · Curso de IA y manual maestro de Claude</title>
+<meta name="description" content="Curso en español para entender la inteligencia artificial desde cero hasta nivel experto (cómo funcionan los LLM, cómo se entrenan, historia, laboratorios y economía) y manual maestro para sacar el máximo partido a Claude: prompts, claude.ai, Claude Code, API, agentes autónomos y MCP.">
+<meta name="theme-color" content="#4338ca">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234338ca'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='800'>E</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <button class="brand" data-go="#/">
+    <span class="brand-mark">E</span>
+    <span class="brand-text">
+      <strong>Expertia</strong>
+      <small>IA de cero a experto · Maestro de Claude</small>
+    </span>
+  </button>
+  <div class="topbar-right">
+    <button class="chip" id="levelChip" data-go="#/progreso" title="Tu nivel"><span class="dot"></span><span id="levelText">Nivel 1</span></button>
+    <button class="icon-btn" id="fontBtn" title="Tamaño de letra" aria-label="Tamaño de letra">Aa</button>
+    <button class="icon-btn" id="themeBtn" title="Tema claro/oscuro" aria-label="Tema">🌗</button>
+  </div>
+</header>
+
+<nav class="mainnav" id="mainnav" aria-label="Secciones">
+  <a href="#/" data-nav="/"><span>🏠</span>Inicio</a>
+  <a href="#/curso" data-nav="/curso"><span>🧠</span>Curso de IA</a>
+  <a href="#/manual" data-nav="/manual"><span>🪶</span>Manual de Claude</a>
+  <a href="#/prompts" data-nav="/prompts"><span>✍️</span>Prompts</a>
+  <a href="#/tarjetas" data-nav="/tarjetas"><span>🃏</span>Tarjetas</a>
+  <a href="#/historia" data-nav="/historia"><span>🕰️</span>Línea de tiempo</a>
+  <a href="#/glosario" data-nav="/glosario"><span>🔤</span>Glosario</a>
+  <a href="#/biblioteca" data-nav="/biblioteca"><span>📚</span>Biblioteca</a>
+  <a href="#/plan" data-nav="/plan"><span>🗓️</span>Plan</a>
+  <a href="#/progreso" data-nav="/progreso"><span>📈</span>Progreso</a>
+</nav>
+
+<main id="main" class="main"></main>
+
+<nav class="tabbar" id="tabbar" aria-label="Navegación">
+  <a href="#/" data-tab="/"><span>🏠</span><b>Inicio</b></a>
+  <a href="#/curso" data-tab="/curso"><span>🧠</span><b>Curso</b></a>
+  <a href="#/manual" data-tab="/manual"><span>🪶</span><b>Claude</b></a>
+  <a href="#/tarjetas" data-tab="/tarjetas"><span>🃏</span><b>Tarjetas</b></a>
+  <button data-act="more" data-tab="more"><span>☰</span><b>Más</b></button>
+</nav>
+
+<footer class="foot">
+  <p>Expertia · Un curso personal para entender la IA y dominar Claude. Contenido actualizado a septiembre de 2026.</p>
+  <p><button data-go="#/ajustes">⚙️ Ajustes y copia de seguridad</button></p>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="modal" class="modal" hidden></div>
+
+<!-- núcleo -->
+<script src="assets/js/core/core.js"></script>
+<script src="assets/js/core/store.js"></script>
+<!-- contenido: curso de IA -->
+<script src="assets/js/content/ia-1-fundamentos.js"></script>
+<script src="assets/js/content/ia-2-llm.js"></script>
+<script src="assets/js/content/ia-3-entrenamiento.js"></script>
+<script src="assets/js/content/ia-4-historia.js"></script>
+<script src="assets/js/content/ia-5-panorama.js"></script>
+<script src="assets/js/content/ia-6-seguridad.js"></script>
+<script src="assets/js/content/ia-7-ejecutivo.js"></script>
+<script src="assets/js/content/track-ia.js"></script>
+<!-- contenido: manual de Claude -->
+<script src="assets/js/content/cl-1-conocer.js"></script>
+<script src="assets/js/content/cl-2-prompts.js"></script>
+<script src="assets/js/content/cl-3-claudeai.js"></script>
+<script src="assets/js/content/cl-4-claude-code.js"></script>
+<script src="assets/js/content/cl-5-api.js"></script>
+<script src="assets/js/content/cl-6-agentes.js"></script>
+<script src="assets/js/content/cl-7-expertos.js"></script>
+<script src="assets/js/content/track-claude.js"></script>
+<!-- contenido transversal -->
+<script src="assets/js/content/prompts.js"></script>
+<script src="assets/js/content/glossary.js"></script>
+<script src="assets/js/content/timeline.js"></script>
+<script src="assets/js/content/resources.js"></script>
+<script src="assets/js/content/plan.js"></script>
+<!-- aplicación -->
+<script src="assets/js/app/render.js"></script>
+<script src="assets/js/app/views.js"></script>
+<script src="assets/js/app/main.js"></script>
+</body>
+</html>
